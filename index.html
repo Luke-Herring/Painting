@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Canvas Drawing</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" href="pictures\icons8-l-64.png">
+  <script src="script.js"></script>
+</head>
+
+
+  <body onload="init()">
+          <canvas id="can" width="1550" height="930"></canvas>
+          <div style="position:absolute;top:44%;left:86%;">Choose Color</div>
+          <div style="position:absolute;top:47%;left:86%;width:24px;height:20px;background:green;" id="green" onclick="color(this)"></div>
+          <div style="position:absolute;top:47%;left:88%;width:24px;height:20px;background:blue;" id="blue" onclick="color(this)"></div>
+          <div style="position:absolute;top:47%;left:90%;width:24px;height:20px;background:red;" id="red" onclick="color(this)"></div>
+          <div style="position:absolute;top:50%;left:86%;width:24px;height:20px;background:yellow;" id="yellow" onclick="color(this)"></div>
+          <div style="position:absolute;top:50%;left:88%;width:24px;height:20px;background:orange;" id="orange" onclick="color(this)"></div>
+          <div style="position:absolute;top:50%;left:90%;width:24px;height:20px;background:black;" id="black" onclick="color(this)"></div>
+          <div style="position:absolute;top:53%;left:87%;">Eraser</div>
+          <div style="position:absolute;top:56%;left:88%;width:15px;height:15px;background:white;border:2px solid;" id="white" onclick="color(this)"></div>
+          <img id="canvasimg" style="position:absolute;top:50%;left:82%;" style="display:none;">
+          <input type="button" value="clear" id="clr" size="23" onclick="erase()" style="position:absolute;top:61%;left:87%;">
+      </body>
+
+
+</html>
